@@ -1,0 +1,58 @@
+<div class="left-side sticky-left-side">
+  <div class="logo">
+    <h1><a href="#"><%= t ".musi" %><span><%= t ".c" %></span></a></h1>
+  </div>
+  <div class="logo-icon text-center">
+    <a href="#"><%= t ".m" %></a>
+  </div>
+  <div class="left-side-inner">
+    <ul class="nav nav-pills nav-stacked custom-nav">
+      <li class="active"><a href="#">
+        <i class="lnr lnr-home"></i>
+        <span><%= t ".home" %></span></a>
+      </li>
+      <li>
+        <%= link_to "#", data: {toggle: "modal", target: "#myModal1"} do %>
+          <i class="fa fa-th"></i>
+          <span><%= t ".apps" %></span>
+        <% end %>
+      </li>
+      <li><a href="#"><i class="lnr lnr-users"></i>
+        <span><%= t ".artists" %></span></a>
+      </li>
+      <li><a href="#"><i class="lnr lnr-music-note"></i>
+        <span><%= t ".albums" %></span></a>
+      </li>
+      <li class="menu-list">
+        <a href="#"><i class="lnr lnr-indent-increase"></i>
+        <span><%= t ".browser" %></span></a>
+        <ul class="sub-menu-list">
+          <li><a href="#"><%= t ".artists" %></a> </li>
+          <li><a href="404.html"></a><%= t ".services" %> </li>
+        </ul>
+      </li>
+      <li><a href="#"><i class="lnr lnr-book"></i>
+        <span><%= t "blog" %></span></a>
+      </li>
+      <li><a href="#"><i class="lnr lnr-pencil"></i>
+        <span><%= t ".typography" %></span></a>
+      </li>
+      <li class="menu-list">
+        <a href="#"><i class="lnr lnr-heart"></i>
+          <span><%= t ".my_favourites" %></span></a>
+        <ul class="sub-menu-list">
+          <li><a href="#"><%= t ".all_songs" %></a></li>
+        </ul>
+      </li>
+      <li class="menu-list">
+        <a href="#">
+          <i class="fa fa-thumb-tack"></i>
+          <span><%= t ".contact" %></span>
+        </a>
+        <ul class="sub-menu-list">
+          <li><a href="#"><%= t ".location" %></a> </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>

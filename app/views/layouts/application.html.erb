@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>FramgiaIMusicSystem</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <title><%= full_title yield(:title) %></title>
+    <%= render "layouts/rails_default" %>
+    <%= render "layouts/shim" %>
   </head>
-
-  <body>
-    <%= yield %>
+  <body class="sticky-header left-side-collapsed"  onload="initMap()">
+    <section>
+      <%= render "layouts/leftside" %>
+      <%= render "layouts/header" %>
+      <%= yield %>
+      <%= render "layouts/footer" %>
+      </div>
+    </section>
   </body>
 </html>
