@@ -1,33 +1,27 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  admin:
+    admin:
+      index:
+        welcome: "Welcome to Framgia IMusic Admin"
+  layouts:
+    admin:
+      admin:
+        title: "Admin | FramgiaImusic"
+        head_title: "Framgia Imusic Admin"
+        dashboard: "Dashboard"
+        icon_dashboard: "dashboard"
+        manage_user: "Manage Users"
+        icon_person: "person"
+        manage_artist: "Manage Artists"
+        manage_category: "Manage Categories"
+        icon_content_paste: "content_paste"
+        manage_album: "Manage Albums"
+        icon_library_books: "library_books"
+        manage_music: "Manage Musics"
+        manage_lyrics: "Manage Lyrics"
+        made_with: "Made with"
+        favorite: "favorite"
+        t3: "Team 3 Framgia Open Education"
+        better: "for a better web."
+
+
