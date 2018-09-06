@@ -41,6 +41,8 @@ en:
       all_songs: "All Songs"
       contact: "Contact"
       location: "Location"
+      songs: "Songs"
+      cate: "Categories"
     footer:
       home: "Home"
       navigation: "Navigation"

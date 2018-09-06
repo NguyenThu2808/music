@@ -3,13 +3,15 @@
     <h1><a href="#"><%= t ".musi" %><span><%= t ".c" %></span></a></h1>
   </div>
   <div class="logo-icon text-center">
-    <a href="#"><%= t ".m" %></a>
+    <%= link_to t(".m"), root_path  %>
   </div>
   <div class="left-side-inner">
     <ul class="nav nav-pills nav-stacked custom-nav">
-      <li class="active"><a href="#">
-        <i class="lnr lnr-home"></i>
-        <span><%= t ".home" %></span></a>
+      <li class="active">
+        <%= link_to root_path, class: "hover_menu_left_x" do %>
+          <i class="lnr lnr-home"></i>
+          <div class="hover_menu_left_0"><%= t ".home" %></div>
+        <% end %>
       </li>
       <li>
         <%= link_to "#", data: {toggle: "modal", target: "#myModal1"} do %>
@@ -20,16 +22,17 @@
       <li><a href="#"><i class="lnr lnr-users"></i>
         <span><%= t ".artists" %></span></a>
       </li>
-      <li><a href="#"><i class="lnr lnr-music-note"></i>
-        <span><%= t ".albums" %></span></a>
+      <li>
+        <%= link_to songs_path, class: "hover_menu_left_x" do %>
+          <i class="lnr lnr-music-note"></i>
+          <div class="hover_menu_left_0"><%= t ".songs" %></div>
+        <% end %>
       </li>
-      <li class="menu-list">
-        <a href="#"><i class="lnr lnr-indent-increase"></i>
-        <span><%= t ".browser" %></span></a>
-        <ul class="sub-menu-list">
-          <li><a href="#"><%= t ".artists" %></a> </li>
-          <li><a href="404.html"></a><%= t ".services" %> </li>
-        </ul>
+      <li>
+        <%= link_to categories_path, class: "hover_menu_left_x" do %>
+          <i class="lnr lnr-indent-increase"></i>
+          <div class="hover_menu_left_0"><%= t ".cate" %></div>
+        <% end %>
       </li>
       <li><a href="#"><i class="lnr lnr-book"></i>
         <span><%= t "blog" %></span></a>
