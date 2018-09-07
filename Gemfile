@@ -23,6 +23,9 @@ gem "bootstrap-kaminari-views"
 gem "frontend-generators"
 gem "ffaker"
 gem "rails-i18n"
+gem "carrierwave", "1.2.2"
+gem "mini_magick", "4.7.0"
+gem "ransack"
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]

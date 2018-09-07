@@ -1,0 +1,11 @@
+<% @songs.each do |song| %>
+  <div class="col-md-3 artist-grid">
+    <%= link_to "" do %>
+      <%= image_tag song.avatar.url %>
+    <% end %>
+    <%= link_to "" do  %>
+      <i class="glyphicon glyphicon-play-circle"></i>
+    <% end %>
+    <%= link_to song.name, "#", class: "art" %>
+  </div>
+<% end %>
