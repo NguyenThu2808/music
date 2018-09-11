@@ -96,6 +96,11 @@ en:
       sign_up: "Sign Up"
       sign_in: "Sign In"
       logout: "Logout"
+      signed_in_as: "Signed in as"
+      sign_in_with_google: "Sign in with Google"
+      show: "Show"
+      edit_password: "Edit Password"
+      edit_profile: "Edit profile"
   devise:
     sessions:
       new:
@@ -169,3 +174,26 @@ en:
     unlocks:
       new:
         resend_unlock: "Resend unlock instructions"
+  users:
+    edit:
+      edit_profile: "Editing Profile"
+      logout: "Log out"
+      prohibited_idea: "prohibited this idea from being saved:"
+      account_settings: "Account Settings"
+      help: "Help "
+      overview: "Overview "
+      follow: "Follow"
+      message: "Message"
+      developer: "Developer"
+    show:
+      logout: "Log out"
+      prohibited_idea: "prohibited this idea from being saved:"
+      account_settings: "Account Settings"
+      help: "Help "
+      overview: "Overview "
+      follow: "Follow"
+      message: "Message"
+      developer: "Developer"
+      some_user: "Some user related content goes here..."
+    update:
+      profile_update: "Profile was successfully updated."
